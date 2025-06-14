@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget🛒Bazaar</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="Budget-Bazaar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-3 fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./logo.png" width="50" height="50" class="mr-2" alt="Logo">
+            <div class="d-flex flex-column mr-4">
+                <span style="color: green; font-weight: 700; font-size: 20px;">B<span
+                        style="color:green;">🛒</span>B</span>
+                <span style="color: red; font-size: 12px; margin-top: -5px;">ready</span>
+            </div>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <div class="d-none d-md-flex align-items-center mx-3 mt-2 mt-lg-0">
+                <i class="fas fa-map-marker-alt text-success mr-1"></i>
+                <div>
+                    <strong>521212</strong><br>
+                    <span style="font-size: 12px; color: #666;">Vijaywada</span>
+                </div>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center mx-3">
+                <i class="fas fa-clock text-warning mr-2"></i>
+                <div style="font-size: 13px;">
+                    Earliest <span class="text-success font-weight-bold">Home Delivery</span><br>
+                    <strong>Today 03:00 PM - 06:00 PM</strong>
+                </div>
+            </div>
+
+            <form class="form-inline mx-auto my-2 my-lg-0 flex-grow-1" style="max-width: 500px;">
+                <div class="input-group w-100">
+                    <input class="form-control" type="search" placeholder="Search for Gaming Pc's" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-success px-4" type="submit">SEARCH</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="d-flex flex-column flex-lg-row align-items-center ml-auto mt-2 mt-lg-0">
+                <a href="#" class="nav-link d-flex align-items-center">
+                    <i class="fas fa-user-circle text-success mr-1"></i> Sign In / Register
+                </a>
+                <a href="#" class="nav-link text-muted"><i class="fas fa-bell text-success"></i>Empty</a>
+                <a href="#" class="nav-link position-relative">
+                    <i class="fas fa-shopping-cart text-success"></i>
+                    <span class="badge badge-warning position-absolute" style="top: 0; right: 0;">0</span>
+                </a>
+                <span class="ml-1">₹0</span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <nav class="navbar navbar-expand-lg mt-2 navbar-dark bg-success shadow-sm p-3" style="top: 70px;">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center" style="color: black;" href="#"
+                        id="categoryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars mr-2"></i> All Categories
+                    </a>
+
+                    <div class="dropdown-menu w-100 p-3" aria-labelledby="categoryDropdown">
+                        <div class="row">
+                            <div class="col-6 col-md-3 mb-3">
+                                <img src="https://cdn-icons-gif.flaticon.com/11188/11188750.gif" width="40"
+                                    alt="grocery">
+                                <h6 class="mt-2">GROCERY</h6>
+                                <a class="dropdown-item" href="#">Dals</a>
+                                <a class="dropdown-item" href="#">Pulses</a>
+                                <a class="dropdown-item" href="#">Dry Fruits</a>
+                                <a class="dropdown-item" href="#">Cooking Oil</a>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <img src="https://cdn-icons-gif.flaticon.com/15547/15547211.gif" width="40"
+                                    alt="fruits">
+                                <h6 class="mt-2">FRUITS</h6>
+                                <a class="dropdown-item" href="#">Apples</a>
+                                <a class="dropdown-item" href="#">Bananas</a>
+                                <a class="dropdown-item" href="#">Oranges</a>
+                                <a class="dropdown-item" href="#">Leafy Veggies</a>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <img src="https://cdn-icons-gif.flaticon.com/11188/11188746.gif" width="40" alt="dairy">
+                                <h6 class="mt-2">DAIRY</h6>
+                                <a class="dropdown-item" href="#">Milk</a>
+                                <a class="dropdown-item" href="#">Butter</a>
+                                <a class="dropdown-item" href="#">Cheese</a>
+                                <a class="dropdown-item" href="#">Curd</a>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <img src="https://cdn-icons-gif.flaticon.com/10826/10826797.gif" width="40"
+                                    alt="beverages">
+                                <h6 class="mt-2">BEVERAGES</h6>
+                                <a class="dropdown-item" href="#">Juices</a>
+                                <a class="dropdown-item" href="#">Soft Drinks</a>
+                                <a class="dropdown-item" href="#">Energy Drinks</a>
+                                <a class="dropdown-item" href="#">Water</a>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <img src="https://cdn-icons-gif.flaticon.com/17888/17888949.gif" width="40"
+                                    alt="Men's clothes">
+                                <h6 class="mt-2">MEN'S CLOTHES</h6>
+                                <a class="dropdown-item" href="#">Shirts</a>
+                                <a class="dropdown-item" href="#">Trousers</a>
+                                <a class="dropdown-item" href="#">Jackets</a>
+                                <a class="dropdown-item" href="#">T-Shirts</a>
+                                <a class="dropdown-item" href="#">Night-Ware</a>
+
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <img src="https://cdn-icons-gif.flaticon.com/13374/13374043.gif" width="40"
+                                    alt="clothes">
+                                <h6 class="mt-2">WOMEN'S CLOTHES</h6>
+                                <a class="dropdown-item" href="#">Shirts</a>
+                                <a class="dropdown-item" href="#">Trousers</a>
+                                <a class="dropdown-item" href="#">Jackets</a>
+                                <a class="dropdown-item" href="#">T-Shirts</a>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <img src="https://cdn-icons-gif.flaticon.com/14183/14183436.gif" width="40"
+                                    alt="clothes">
+                                <h6 class="mt-2">ELECTRONICS</h6>
+                                <a class="dropdown-item" href="#">Laptops</a>
+                                <a class="dropdown-item" href="#">Mobiles</a>
+                                <a class="dropdown-item" href="#">Tablets</a>
+                                <a class="dropdown-item" href="#">Headphones</a>
+                            </div>
+                            <div class="col-6 col-md-3 mb-3">
+                                <img src="https://cdn-icons-gif.flaticon.com/16677/16677903.gif" width="40"
+                                    alt="clothes">
+                                <h6 class="mt-2">HOME & KITCHEN</h6>
+                                <a class="dropdown-item" href="#">Cookware</a>
+                                <a class="dropdown-item" href="#">Dinnerware</a>
+                                <a class="dropdown-item" href="#">Appliances</a>
+                                <a class="dropdown-item" href="#">Storage</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#secondaryNavbar"
+                aria-controls="secondaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="secondaryNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Fruits & Vegetables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Dairy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Beverages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home & Kitchen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Cleaners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="hero position-relative overflow-hidden pt-5" style="min-height: 80vh; margin-top: 140px;">
+        <video autoplay muted loop playsinline class="position-absolute"
+            style="object-fit: cover; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+            <source src="https://cdn.pixabay.com/video/2022/11/03/137578-766938294_large.mp4" type="video/mp4">
+        </video>
+        <div class="logo-box text-center text-light d-flex flex-column justify-content-center align-items-center px-3"
+            style="min-height: 80vh;">
+            <img src="./logo.png" alt="Budget Bazaar Logo" class="logo-img mb-3"
+                style="max-width: 120px; height: auto;">
+            <h1 class="font-weight-bold text-dark display-4 d-none d-md-block">Welcome to Budget Bazaar</h1>
+            <h2 class="font-weight-bold  d-block d-md-none" style="color: #070707;">Welcome to Budget Bazaar</h2>
+
+            <p class="text-dark lead text-center">Cart It. Grab It. Love It. Repeat.</p>
+            <button class="btn btn-outline-dark mt-2 px-4 py-2">Start Shopping</button>
+        </div>
+    </section>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide border rounded" data-ride="carousel"
+        style="margin: 10px; padding: 0;">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.dmart.in/_next/image?url=https%3A%2F%2Fcdn.dmart.in%2Fimages%2Frwd%2Fbanners%2Fhmpg%2F1jan25-crsl-ds-ganguru.jpg&w=1920&q=75"
+                    class="d-block w-100" alt="Carousel Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.dmart.in/_next/image?url=https%3A%2F%2Fcdn.dmart.in%2Fimages%2Frwd%2Fbanners%2Fhmpg%2F1may24-crsl-beautystore.jpg&w=1920&q=75"
+                    class="d-block w-100" alt="Carousel Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.dmart.in/images/rwd/banners/curated/1jun25-curated-halfprice-ganguru.jpg"
+                    class="d-block w-100" alt="Carousel Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide  my-4  border rounded" data-ride="carousel"
+        style="margin: 10px; padding: 0;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.dmart.in/images/rwd/banners/curated/1sep24-curated-basket-musthaves-kancha.jpg"
+                    class="d-block w-100" alt="Promotional Banner">
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide  my-4  border rounded" data-ride="carousel"
+        style="margin: 10px; padding: 0;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.dmart.in/images/rwd/banners/curated/1jan25-curated-badapack-ganguru.jpg "
+                    class="d-block w-100" alt="Promotional Banner">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid my-4 border rounded" style="margin: 10px; padding: 0;">
+        <h4 class="mb-3" style="text-align: center;"><img src="https://cdn-icons-gif.flaticon.com/12414/12414326.gif"
+                alt="" width="40">Fresh Vegetables</h4>
+
+        <div class="position-relative">
+            <div class="d-flex flex-nowrap overflow-auto py-2" id="scrollContainer">
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://static.vecteezy.com/system/resources/previews/029/712/741/original/carrot-transparent-background-png.png"
+                        class="card-img-top" alt="Carrots">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Carrots</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 80</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 60</p>
+                        <p class="text-danger mb-2">₹ 20 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>500g</option>
+                            <option>1kg</option>
+                            <option>2kg</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://www.pngarts.com/files/4/Beet-PNG-Background-Image.png" class="card-img-top"
+                        alt="Beets">
+                    <div class="card-body">
+                        <h5 class="card-title">Organic Beets</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 100</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 75</p>
+                        <p class="text-danger mb-2">₹ 25 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>500g</option>
+                            <option>1kg</option>
+                            <option>2kg</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://www.pngplay.com/wp-content/uploads/10/Lady-Finger-Transparent-Image.png"
+                        class="card-img-top" alt="Lettuce">
+                    <div class="card-body">
+                        <h5 class="card-title">Okra</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 50</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 35</p>
+                        <p class="text-danger mb-2">₹ 15 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>500g</option>
+                            <option>1kg</option>
+                            <option>2kg</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://www.freeiconspng.com/thumbs/potato-png/potato-png-6.png" class="card-img-top"
+                        alt="Carrots">
+                    <div class="card-body">
+                        <h5 class="card-title">Potatoes</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 90</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 65</p>
+                        <p class="text-danger mb-2">₹ 25 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>500g</option>
+                            <option>1kg</option>
+                            <option>2kg</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-seed/3/w/n/200-vlr-198-brinjal-balck-round-f1-hybrid-seeds-200-seeds-vibex-original-imaggry9rsxewcna.jpeg?q=90&crop=false"
+                        class="card-img-top" alt="Potatoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Globe Brinjal</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹150</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 100</p>
+                        <p class="text-danger mb-2">₹ 50 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>500g</option>
+                            <option>1kg</option>
+                            <option>2kg</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://nativeindianorganics.com/wp-content/uploads/2022/11/cabbage.jpg"
+                        class="card-img-top" alt="Cabbage">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Cabbage</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 40</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 25</p>
+                        <p class="text-danger mb-2">₹ 15 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit</option>
+                            <option>2 Units</option>
+                            <option>5 Units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://seed2plant.in/cdn/shop/products/spinachseeds.jpg?v=1603966262&width=1500"
+                        class="card-img-top" alt="Spinach">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Spinach</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 30</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 20</p>
+                        <p class="text-danger mb-2">₹ 10 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 unit</option>
+                            <option>2 units</option>
+                            <option>5 units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-4 border rounded" style="margin: 10px; padding: 0;">
+        <h4 class="mb-3" style="text-align: center;"><img src="https://cdn-icons-gif.flaticon.com/14099/14099201.gif"
+                alt="" width="40">Home Appliances</h4>
+
+        <div class="position-relative">
+            <div class="d-flex flex-nowrap overflow-auto py-2" id="scrollContainer">
+
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://i.pinimg.com/736x/44/b1/5c/44b15ce1537b8f58ba8fba18c9ac3ca4.jpg"
+                        class="card-img-top" alt="Tomatoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Conditioner</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹45,000</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹39,999</p>
+                        <p class="text-danger mb-2">₹ 5,001 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 unit</option>
+                            <option>2 units</option>
+                            <option>5 units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://www.pngarts.com/files/3/Double-Door-Refrigerator-Transparent-Image.png"
+                        class="card-img-top" alt="Beets">
+                    <div class="card-body">
+                        <h5 class="card-title">Refrigerator</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 21,000</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 19,999</p>
+                        <p class="text-danger mb-2">₹ 1,001 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit</option>
+                            <option>2 Units</option>
+                            <option>5 Units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://www.pngplay.com/wp-content/uploads/12/Microwave-Oven-Transparent-Free-PNG-Clip-Art.png"
+                        class="card-img-top" alt="Lettuce">
+                    <div class="card-body">
+                        <h5 class="card-title">Microwave Oven</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 50,000</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 35,000</p>
+                        <p class="text-danger mb-2">₹ 15,000 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit</option>
+                            <option>2 Units</option>
+                            <option>4 Units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://5.imimg.com/data5/IX/MW/VG/SELLER-47782725/3-burner-stainless-steel-gas-stove.jpg"
+                        class="card-img-top" alt="Carrots">
+                    <div class="card-body">
+                        <h5 class="card-title">Gas Stove</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 4,000</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 3,499</p>
+                        <p class="text-danger mb-2">₹ 501 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit</option>
+                            <option>2 Units</option>
+                            <option>5 Units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/023/353/490/small_2x/beautiful-ceiling-fan-png.png"
+                        class="card-img-top" alt="Potatoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Ceiling Fan</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 6,000</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 4,500</p>
+                        <p class="text-danger mb-2">₹ 1,500 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit</option>
+                            <option>2 Units</option>
+                            <option>5 Units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://www.kindpng.com/picc/m/175-1755353_samsung-tv-png-samsung-qled-tv-55-inch.png"
+                        class="card-img-top" alt="Cabbage">
+                    <div class="card-body">
+                        <h5 class="card-title">QLED TV</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 50,000</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 45,000</p>
+                        <p class="text-danger mb-2">₹ 5,000 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit</option>
+                            <option>2 Units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://png.pngtree.com/png-clipart/20240629/original/pngtree-front-loading-washing-machine-png-image_15435763.png"
+                        class="card-img-top" alt="Spinach">
+                    <div class="card-body">
+                        <h5 class="card-title">Washing Machine</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 30,000</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 25,000</p>
+                        <p class="text-danger mb-2">₹ 5,000 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit</option>
+                            <option>2 Units</option>
+                            <option>5 Units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-4 border rounded" style="margin: 10px; padding: 0;">
+        <h4 class="mb-3" style="text-align: center;"><img src="https://cdn-icons-gif.flaticon.com/11188/11188750.gif"
+                alt="" width="40">Groceries</h4>
+
+        <div class="position-relative">
+            <div class="d-flex flex-nowrap overflow-auto py-2" id="scrollContainer">
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://assetscdn1.paytm.com/images/catalog/product/O/ON/ONDFREEDOM-REFIVASA1189368B6D5DFF2/1_th.png"
+                        class="card-img-top" alt="SunFlower Oil">
+                    <div class="card-body">
+                        <h5 class="card-title">SunFlower Oil 5kg</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹750</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹599</p>
+                        <p class="text-danger mb-2">₹ 151 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 unit</option>
+                            <option>2 units</option>
+                            <option>5 units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://aazito.com/upload/product/turmeric-powder.png" class="card-img-top" alt="Beets">
+                    <div class="card-body">
+                        <h5 class="card-title">Turmeric Powder</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 100</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 79</p>
+                        <p class="text-danger mb-2">₹ 21 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>500g</option>
+                            <option>1kg</option>
+                            <option>2kg</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://www.tatanutrikorner.com/cdn/shop/products/Tata-Sampann-Chana-Dal-1kg-_FOP_-with-Sanjeev-kapoor.png?v=1660200948"
+                        class="card-img-top" alt="Lettuce">
+                    <div class="card-body">
+                        <h5 class="card-title">Chana Dal</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹150</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 135</p>
+                        <p class="text-danger mb-2">₹ 15 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>500g</option>
+                            <option>1kg</option>
+                            <option>2kg</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/6/KY/YT/AC/26549812/vim-hand-dishwash-liquid-5l-01-1024x1024-2x.png"
+                        class="card-img-top" alt="Carrots">
+                    <div class="card-body">
+                        <h5 class="card-title">Vim Gel</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹300</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 249</p>
+                        <p class="text-danger mb-2">₹ 51 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit</option>
+                            <option>2 Units</option>
+                            <option>5 Units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://pngimg.com/uploads/egg/egg_PNG40781.png" class="card-img-top" alt="Potatoes">
+                    <div class="card-body">
+                        <h5 class="card-title">Eggs</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 60</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 50</p>
+                        <p class="text-danger mb-2">₹ 10 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit (10Eggs)</option>
+                            <option>2 Units(20Eggs)</option>
+                            <option>5 Units(50Eggs)</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.ueee8v0B07zSVOCwJrRRswHaE6&pid=Api&P=0&h=180"
+                        class="card-img-top" alt="jaggery">
+                    <div class="card-body">
+                        <h5 class="card-title">Jaggery</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹70</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 65</p>
+                        <p class="text-danger mb-2">₹ 5 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>500g </option>
+                            <option>1kg </option>
+                            <option>2kg</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="card me-3 mr-3 ml-2" style="min-width: 250px;">
+                    <img src="https://pngimg.com/uploads/coffee_jar/coffee_jar_PNG17056.png" class="card-img-top"
+                        alt="Spinach">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee Powder</h5>
+                        <p class="mb-1 text-muted">MRP: <del>₹ 150</del></p>
+                        <p class="mb-1 fw-bold text-success">Budget Bazaar: ₹ 125</p>
+                        <p class="text-danger mb-2">₹ 25 OFF</p>
+                        <select class="form-select mb-2">
+                            <option>1 Unit</option>
+                            <option>2 Units</option>
+                            <option>5 Units</option>
+                        </select>
+                        <a href="#" class="btn btn-success w-100">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide my-4 border rounded" data-ride="carousel"
+        style="margin: 10px; padding: 0;">
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="https://cdn.dmart.in/images/rwd/banners/curated/26feb24-curated-monthly-kancha.jpg"
+                    class="d-block w-100 " alt="Promotional Banner">
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide  my-4  border rounded" data-ride="carousel"
+        style="margin: 10px; padding: 0;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.dmart.in/images/rwd/banners/curated/11nov24-curated-fruitsandvegetable.jpg"
+                    class="d-block w-100 " alt="Promotional Banner">
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide border rounded" data-ride="carousel"
+        style="margin: 10px; padding: 0;">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.dmart.in/_next/image?url=https%3A%2F%2Fcdn.dmart.in%2Fimages%2Frwd%2Fbanners%2Fhmpg%2F1jan25-crsl-babycare-ganguru.jpg&w=1920&q=75"
+                    class="d-block w-100" alt="Carousel Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.dmart.in/_next/image?url=https%3A%2F%2Fcdn.dmart.in%2Fimages%2Frwd%2Fbanners%2Fhmpg%2F1jun23-crsl-cookware.jpg&w=1920&q=75"
+                    class="d-block w-100" alt="Carousel Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.dmart.in/_next/image?url=https%3A%2F%2Fcdn.dmart.in%2Fimages%2Frwd%2Fbanners%2Fhmpg%2F1dec24-crsl-petfood-ganguru.jpg&w=1920&q=75"
+                    class="d-block w-100" alt="Carousel Slide 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide  my-4  border rounded" data-ride="carousel"
+        style="margin: 10px; padding: 0;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.dmart.in/images/rwd/banners/curated/1dect24-curated-halfprice-kancha.jpg"
+                    class="d-block w-100 " alt="Promotional Banner">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-light text-center text-lg-start mt-5 py-4">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Budget🛒Bazaar</h5>
+                    <p>
+                        Your one-stop shop for all your grocery and household needs. Fresh products, unbeatable prices,
+                        and fast delivery!
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark">About Us</a></li>
+                        <li><a href="#" class="text-dark">Contact Us</a></li>
+                        <li><a href="#" class="text-dark">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Connect</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="text-dark"><i class="fab fa-facebook-f mr-2"></i>Facebook</a></li>
+                        <li><a href="#" class="text-dark"><i class="fab fa-twitter mr-2"></i>Twitter</a></li>
+                        <li><a href="#" class="text-dark"><i class="fab fa-instagram mr-2"></i>Instagram</a></li>
+                    </ul>
+                </div>
+
+                <span class="ml-4 pt-3" style="font-weight: bold;">Team Members➡️</span>
+                <span class="ml-4 pt-3"><a href="#" class="text-dark">Meegada Lokesh(234120P)</a></span>
+                <span class="ml-4 pt-3"><a href="#" class="text-dark">Chundru GopiChand(234132P)</a></span>
+                <span class="ml-4 pt-3"><a href="#" class="text-dark">Nidamanuri Rohith(234108P)</a></span>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Budget🛒Bazaar. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
