@@ -1,218 +1,218 @@
 
-        h4.mb-3 {
-            color: #2c3e50;
-            font-weight: bold;
-            animation: glowText 2s ease-in-out infinite alternate;
-        }
+    h4.mb-3 {
+        color: #2c3e50;
+        font-weight: bold;
+        animation: glowText 2s ease-in-out infinite alternate;
+    }
 
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgb(0, 0, 0);
-        }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgb(0, 0, 0);
+    }
 
-        .btn-success {
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0 0 0 rgba(72, 239, 144, 0.8);
-        }
+    .btn-success {
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 0 rgba(72, 239, 144, 0.8);
+    }
 
-        .btn-success:hover {
-            box-shadow: 0 0 15px rgba(72, 239, 144, 0.8), 0 0 25px rgba(72, 239, 144, 0.6);
-            transform: scale(1.02);
-        }
+    .btn-success:hover {
+        box-shadow: 0 0 15px rgba(72, 239, 144, 0.8), 0 0 25px rgba(72, 239, 144, 0.6);
+        transform: scale(1.02);
+    }
 
-        body {
-            font-size: 16px;
-        }
+    body {
+        font-size: 16px;
+    }
 
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: contain;
-            padding: 10px;
-        }
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        padding: 10px;
+    }
 
-        .hero video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
+    .hero video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
 
-        .hero {
-            min-height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            padding: 20px;
-        }
+    .hero {
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+    }
 
-        .logo-box {
-            max-width: 90%;
-        }
+    .logo-box {
+        max-width: 90%;
+    }
 
-        .logo-img {
-            max-width: 100px;
-            height: auto;
-        }
+    .logo-img {
+        max-width: 100px;
+        height: auto;
+    }
 
-        .navbar .form-inline {
-            flex-grow: 1;
-            margin-right: 0 !important;
-        }
+    .navbar .form-inline {
+        flex-grow: 1;
+        margin-right: 0 !important;
+    }
 
-        .navbar .form-inline input {
-            margin-bottom: 10px;
-        }
+    .navbar .form-inline input {
+        margin-bottom: 10px;
+    }
 
-        .navbar-collapse .nav-link,
-        .navbar-collapse .btn {
-            text-align: center;
-            margin-bottom: 10px;
+    .navbar-collapse .nav-link,
+    .navbar-collapse .btn {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar.bg-success.shadow-sm.p-3 {
+        top: 70px;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    @media (min-width: 992px) {
+        .dropdown:hover .dropdown-menu {
+            display: block;
         }
 
         .navbar.bg-success.shadow-sm.p-3 {
-            top: 70px;
-            width: 100%;
-            z-index: 1000;
+            position: fixed;
+        }
+    }
+
+    .dropdown-menu {
+        background: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 100%;
+        border-top: 2px solid #070707;
+        padding: 15px;
+    }
+
+    .dropdown-menu h6 {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .dropdown-item {
+        padding: 0.25rem 0;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .dropdown-item:hover {
+        color: #28a745;
+        background-color: transparent;
+    }
+
+    .container-fluid img:hover {
+        transform: scale(1.10);
+        transition: transform .2s;
+    }
+
+    .logo-box img:hover {
+        transform: scale(2);
+        transition: transform .2s;
+    }
+
+    .carousel-item img:hover {
+        transform: scale(1.05);
+        transition: transform .2s;
+    }
+
+    @media (max-width: 767.98px) {
+        .navbar-brand .mr-2 {
+            margin-right: 10px !important;
         }
 
-        @media (min-width: 992px) {
-            .dropdown:hover .dropdown-menu {
-                display: block;
-            }
-
-            .navbar.bg-success.shadow-sm.p-3 {
-                position: fixed;
-            }
+        .navbar-brand span {
+            font-size: 16px !important;
         }
 
-        .dropdown-menu {
-            background: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .navbar-brand span:last-child {
+            font-size: 10px !important;
+        }
+
+        .navbar .d-flex.align-items-center.mx-3,
+        .navbar .d-none.d-lg-flex {
+            display: none !important;
+        }
+
+        .navbar .form-inline {
+            margin-top: 15px !important;
+            margin-bottom: 15px !important;
+            max-width: 100% !important;
+        }
+
+        .navbar .form-inline input {
             width: 100%;
-            left: 0;
-            right: 0;
-            top: 100%;
-            border-top: 2px solid #070707;
+            margin-bottom: 10px;
+        }
+
+        .navbar .form-inline button {
+            width: 100%;
+        }
+
+        .navbar-collapse .ml-auto {
+            margin-left: 0 !important;
+        }
+
+        .navbar-collapse .nav-link {
+            padding: 5px 0;
+        }
+
+        .hero .logo-box {
             padding: 15px;
         }
 
-        .dropdown-menu h6 {
-            font-weight: bold;
-            margin-top: 10px;
-            color: #333;
+        .hero h1 {
+            font-size: 2.5rem;
         }
 
-        .dropdown-item {
-            padding: 0.25rem 0;
-            font-size: 14px;
-            color: #555;
+        .hero h2 {
+            font-size: 2rem;
         }
 
-        .dropdown-item:hover {
-            color: #28a745;
-            background-color: transparent;
+        .hero p {
+            font-size: 1rem;
         }
 
-        .container-fluid img:hover {
-            transform: scale(1.10);
-            transition: transform .2s;
+        .carousel-caption {
+            display: none !important;
         }
 
-        .logo-box img:hover {
-            transform: scale(2);
-            transition: transform .2s;
+        .card-body {
+            padding: 15px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .navbar .form-inline {
+            max-width: 300px;
         }
 
-        .carousel-item img:hover {
-            transform: scale(1.05);
-            transition: transform .2s;
+        .navbar .d-flex.align-items-center.mx-3 {
+            margin-left: 10px !important;
+            margin-right: 10px !important;
         }
-
-        @media (max-width: 767.98px) {
-            .navbar-brand .mr-2 {
-                margin-right: 10px !important;
-            }
-
-            .navbar-brand span {
-                font-size: 16px !important;
-            }
-
-            .navbar-brand span:last-child {
-                font-size: 10px !important;
-            }
-
-            .navbar .d-flex.align-items-center.mx-3,
-            .navbar .d-none.d-lg-flex {
-                display: none !important;
-            }
-
-            .navbar .form-inline {
-                margin-top: 15px !important;
-                margin-bottom: 15px !important;
-                max-width: 100% !important;
-            }
-
-            .navbar .form-inline input {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-
-            .navbar .form-inline button {
-                width: 100%;
-            }
-
-            .navbar-collapse .ml-auto {
-                margin-left: 0 !important;
-            }
-
-            .navbar-collapse .nav-link {
-                padding: 5px 0;
-            }
-
-            .hero .logo-box {
-                padding: 15px;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero h2 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .carousel-caption {
-                display: none !important;
-            }
-
-            .card-body {
-                padding: 15px;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 991.98px) {
-            .navbar .form-inline {
-                max-width: 300px;
-            }
-
-            .navbar .d-flex.align-items-center.mx-3 {
-                margin-left: 10px !important;
-                margin-right: 10px !important;
-            }
-        }
+    }
