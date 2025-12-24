@@ -1,30 +1,39 @@
-# BudgetBazaar 💰
-
-BudgetBazaar is a simple and user-friendly expense tracking application designed to help users manage their daily finances effectively. The app allows users to record income and expenses, categorize spending, and gain a clear overview of their budget in one place.
-
-## 🚀 Features
-
-- Add and manage income and expenses  
-- Categorize transactions for better tracking  
-- View overall balance and spending summary  
-- Simple and clean user interface  
-- Designed for easy understanding and usability  
-
-## 🛠️ Technologies Used
-
-- Flutter  
-- Dart  
-- Android Studio  
-
-## 📱 Getting Started
-
-### Prerequisites
-- Flutter SDK installed  
-- Android Studio or VS Code  
-- Android emulator or physical device  
-
-### Installation Steps
-
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/MeegadaLokesh/BudgetBazaar.git
+BudgetBazaar 💰
+BudgetBazaar is a simple and responsive expense tracking web interface built using HTML and CSS. The project focuses on presenting a clean layout for managing personal finances, helping users visually organize income and expenses in an easy-to-understand format.
+This project is purely front-end and is designed to demonstrate structure, layout, and styling concepts without using JavaScript or backend technologies.
+🚀 Features
+Clean and minimal expense tracking layout
+Sections for income and expenses display
+Categorized expense presentation
+Responsive and user-friendly design
+Simple structure suitable for beginners
+🛠️ Technologies Used
+HTML5
+CSS3
+📱 Project Scope
+Front-end only
+No JavaScript functionality
+No database or backend integration
+Ideal for learning UI design and layout basics
+📂 Getting Started
+Prerequisites
+Any modern web browser (Chrome, Edge, Firefox, etc.)
+Code editor (VS Code recommended)
+Installation Steps
+Clone the repository
+Copy code
+Bash
+git clone https://github.com/MeegadaLokesh/BudgetBazaar.git
+Navigate to the project folder
+Copy code
+Bash
+cd BudgetBazaar
+Open the index.html file in your browser
+📌 Future Enhancements
+Add JavaScript for dynamic expense handling
+Form validation and calculations
+Local storage or database integration
+Mobile-first improvements
+👤 Author
+Lokesh Meegada
+Aspiring developer focused on building clean and practical web interfaces.
